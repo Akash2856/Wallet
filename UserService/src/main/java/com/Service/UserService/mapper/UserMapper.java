@@ -9,7 +9,6 @@ import lombok.experimental.UtilityClass;
 public class UserMapper {
     public User maptoUser(CreateUserRequest createUserRequest){
         return User.builder().name(createUserRequest.getName()).email(createUserRequest.getEmail())
-                .password(createUserRequest.getPassword())
                 .phoneNo(createUserRequest.getPhoneNo())
                 .userIdentificationType(createUserRequest.getUserIdentificationType())
                 .UserIdentificationValue(createUserRequest.getUserIdentificationValue())
