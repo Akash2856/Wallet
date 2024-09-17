@@ -63,4 +63,8 @@ public class UserService implements UserDetailsService {
 
         return user;
     }
+
+    public User getUserByPhoneNo(String phoneNo) {
+        return  userRepository.findByPhoneNo(phoneNo);
+    }
 }
