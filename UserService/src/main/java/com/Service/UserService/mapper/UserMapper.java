@@ -8,7 +8,8 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class UserMapper {
     public User maptoUser(CreateUserRequest createUserRequest){
-        return User.builder().name(createUserRequest.getName()).email(createUserRequest.getEmail())
+        return User.builder().name(createUserRequest.getName()).
+                email(createUserRequest.getEmail())
                 .phoneNo(createUserRequest.getPhoneNo())
                 .userIdentificationType(createUserRequest.getUserIdentificationType())
                 .UserIdentificationValue(createUserRequest.getUserIdentificationValue())

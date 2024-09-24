@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NotificationService/NotificationService.iml" filepath="$PROJECT_DIR$/NotificationService/NotificationService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TransactionService/TransactionService.iml" filepath="$PROJECT_DIR$/TransactionService/TransactionService.iml" />
       <module fileurl="file://$PROJECT_DIR$/UserService/UserService.iml" filepath="$PROJECT_DIR$/UserService/UserService.iml" />
       <module fileurl="file://$PROJECT_DIR$/WalletService/WalletService.iml" filepath="$PROJECT_DIR$/WalletService/WalletService.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/wallet.iml" filepath="$PROJECT_DIR$/.idea/wallet.iml" />

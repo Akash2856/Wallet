@@ -30,9 +30,9 @@ public class User implements UserDetails {
     int id;
     @Column(length = 30)
     String name;
-    @Column(unique = true,nullable = false,length = 50)
+    @Column(unique = true,length = 50)
     String email;
-    @Column(unique = true,length = 15)
+    @Column(unique = true,length = 55)
     String  phoneNo;
     String password;
     String authorities;
@@ -51,13 +51,34 @@ public class User implements UserDetails {
     Date createdOn;
 
     @UpdateTimestamp
-    Date updtaedOn;
+    Date updatedOn;
 
 
     @Override
     public String getUsername() {
         return phoneNo;
     }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return false;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return false;
+    }
+
     public Collection<? extends GrantedAuthority> getAuthorities(){
         return Arrays.stream(authorities.split(","))
                 .map(authority -> new SimpleGrantedAuthority(authority))
