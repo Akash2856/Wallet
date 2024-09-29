@@ -10,6 +10,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import java.util.Date;
 
 @Entity
+@Data
 @Getter
 @Setter
 @AllArgsConstructor
@@ -20,7 +21,7 @@ public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
-    String senderPhone;
+    String senderPhoneNo;
     String receiverPhoneNo;
     Double amount;
     String purpose;
